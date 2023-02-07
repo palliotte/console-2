@@ -7,6 +7,8 @@ function rapple() {
     
     while (ok == 0) {
         n = 0
+        apple.set(LedSpriteProperty.X, randint(0, 4))
+        apple.set(LedSpriteProperty.Y, randint(0, 4))
         while (n < RINGS.length - 1) {
             if (apple.isTouching(RINGS[n])) {
                 apple.set(LedSpriteProperty.X, randint(0, 4))

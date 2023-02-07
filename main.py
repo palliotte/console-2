@@ -2,6 +2,8 @@ def rapple():
     global ok
     while ok == 0:
         n = 0
+        apple.set(LedSpriteProperty.X, randint(0, 4))
+        apple.set(LedSpriteProperty.Y, randint(0, 4))
         while n < len(RINGS) - 1:
             if apple.is_touching(RINGS[n]):
                 apple.set(LedSpriteProperty.X, randint(0, 4))
